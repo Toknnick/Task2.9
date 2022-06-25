@@ -10,20 +10,21 @@ namespace Task2._9
     {
         static void Main(string[] args)
         {
-             Random random = new Random();
+            Random random = new Random();
             int maxValueRandom = 28;
             int minValueRandom = 1;
-            int number = random.Next(minValueRandom, maxValueRandom);
-            int amountNumbers = 0;
+            int numberFromRamdom = random.Next(minValueRandom, maxValueRandom);
+            int countNumbers = 0;
             int maxValueTNumber = 999;
             int minValueTNumber = 99;
+            int number = numberFromRamdom;
 
-            for (; number <= minValueTNumber; number += number) {}
-            for (; number <= maxValueTNumber; number += number)
+            for (; number <= minValueTNumber; number += numberFromRamdom) 
+            for (; number <= maxValueTNumber; number += numberFromRamdom)
             {
-                Console.WriteLine(number);
-                amountNumbers++;
+                countNumbers++;
             }
+            Console.WriteLine(countNumbers);
         }
     }
 }
