@@ -10,20 +10,19 @@ namespace Task2._9
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
-            int maxValue = 28;
-            int minValue = 1;
-            int number = random.Next(minValue, maxValue);
-            int minValueThreeDigitNumber = 99;
-            int maxValueThreeDigitNumber = 999;
-            List<int> amountOfNumber = new List<int>();
+             Random random = new Random();
+            int maxValueRandom = 28;
+            int minValueRandom = 1;
+            int number = random.Next(minValueRandom, maxValueRandom);
+            int countNumbers = 0;
+            int maxValueTNumber = 999;
+            int minValueTNumber = 99;
 
-            for (; number <= minValueThreeDigitNumber; number += number)
+            for (; number <= minValueTNumber; number += number) 
+            for (; number <= maxValueTNumber; number += number)
             {
-                for (; number < maxValueThreeDigitNumber; number += number)
-                {
-                    amountOfNumber.Add(number);
-                }
+                Console.WriteLine(number);
+                countNumbers++;
             }
         }
     }
