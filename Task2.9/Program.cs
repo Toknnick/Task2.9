@@ -19,7 +19,11 @@ namespace Task2._9
             int minValueTNumber = 99;
             int number = numberFromRamdom;
 
-            for (; number <= minValueTNumber; number += numberFromRamdom) 
+            while(number <= minValueTNumber)
+            {
+                number += numberFromRamdom;
+            }
+            
             for (; number <= maxValueTNumber; number += numberFromRamdom)
             {
                 countNumbers++;
