@@ -14,15 +14,15 @@ namespace Task2._9
             int maxValueRandom = 28;
             int minValueRandom = 1;
             int number = random.Next(minValueRandom, maxValueRandom);
-            int countNumbers = 0;
+            int amountNumbers = 0;
             int maxValueTNumber = 999;
             int minValueTNumber = 99;
 
-            for (; number <= minValueTNumber; number += number) 
+            for (; number <= minValueTNumber; number += number) {}
             for (; number <= maxValueTNumber; number += number)
             {
                 Console.WriteLine(number);
-                countNumbers++;
+                amountNumbers++;
             }
         }
     }
